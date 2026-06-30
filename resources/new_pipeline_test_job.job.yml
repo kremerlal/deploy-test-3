@@ -1,0 +1,9 @@
+# Sample job — run the pipeline from the bundle (optional).
+resources:
+  jobs:
+    new_pipeline_test_job:
+      name: new_pipeline_test_job
+      tasks:
+        - task_key: refresh_pipeline
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.new_pipeline_test_etl.id}
