@@ -1,0 +1,13 @@
+# Lakeflow Spark Declarative Pipeline — SDP Builder pipeline "new_pipeline_test"
+resources:
+  pipelines:
+    new_pipeline_test_etl:
+      name: new_pipeline_test_etl
+      catalog: ${var.catalog}
+      schema: ${var.schema}
+      serverless: true
+      channel: CURRENT
+      root_path: "../src"
+      libraries:
+        - file:
+            path: "../src/new_pipeline_test.py"
