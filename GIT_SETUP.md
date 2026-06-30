@@ -3,12 +3,12 @@
 SDP Builder staged a **Declarative Automation Bundle** project. Databricks recognizes a folder as a bundle when
 `databricks.yml` is at the project root (see [bundle configuration reference](https://docs.databricks.com/aws/en/dev-tools/bundles/reference)).
 
-Staged copy in workspace: `/Workspace/Users/local-dev@example.com/sdp-bundles/new_pipeline_test`
+Staged copy in workspace: `/Workspace/Users/laurel.kremer@databricks.com/sdp-bundles/new_pipeline_test`
 
 
 ## 1. Push this project to GitHub
 
-Remote URL: `https://github.com/kremerlal/deploy-test-3.git`
+Remote URL: `https://github.com/kremerlal/deploy-test-3`
 
 From your laptop (in a folder containing these bundle files):
 
@@ -17,7 +17,7 @@ git init
 git add .
 git commit -m "Add SDP Builder bundle new_pipeline_test"
 git branch -M main
-git remote add origin https://github.com/kremerlal/deploy-test-3.git
+git remote add origin https://github.com/kremerlal/deploy-test-3
 git push -u origin main
 ```
 
@@ -26,7 +26,7 @@ git push -u origin main
 
 In the Databricks workspace:
 
-1. **Workspace** → **Create** → **Git folder** (or clone into `/Repos/local-dev@example.com/new_pipeline_test`).
+1. **Workspace** → **Create** → **Git folder** (or clone into `/Repos/laurel.kremer@databricks.com/new_pipeline_test`).
 2. Paste your GitHub repository URL and clone.
 3. Open **`databricks.yml`** in the bundle editor.
 
